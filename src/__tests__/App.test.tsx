@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import App from '../App';
 
 describe('App', () => {
-  it('renders welcome message', () => {
+  it('renders the Hero section via App', () => {
     render(<App />);
-    expect(screen.getByText(/welcome to my 3D portfolio/i)).not.toBeInTheDocument();
+    expect(screen.getByText(/Shapping/i)).toBeInTheDocument();
   });
 });

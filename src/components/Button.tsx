@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const Button = ({ text, className, id }: ButtonProps) => {
   return (
-    <a className={`${className ?? ''} cta-wrapper`} id={id}>
+    <a className={`${className ?? ''} cta-wrapper`} id={id} data-testid="cta-button">
       <div className="cta-button group">
         <div className="bg-circle" />
         <p className="text"> {text}</p>
@@ -17,4 +17,5 @@ const Button = ({ text, className, id }: ButtonProps) => {
     </a>
   );
 };
+
 export default Button;
