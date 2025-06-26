@@ -1,10 +1,6 @@
-import Hero from "./sections/Hero.tsx";
+import Hero from './sections/Hero.tsx';
 
 const App = () => {
-    return (
-        <main>
-            <Hero />
-        </main>
-    )
-}
-export default App
+  return <Hero />;
+};
+export default App;
