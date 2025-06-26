@@ -6,7 +6,20 @@ interface ButtonProps {
 
 const Button = ({ text, className, id }: ButtonProps) => {
   return (
-    <a className={`${className ?? ''} cta-wrapper`} id={id} data-testid="cta-button">
+    <a
+      className={`${className ?? ''} cta-wrapper`}
+      onClick={(e) => {
+        e.preventDefault();
+        const target = document.getElementById('counter');
+        if (target && id) {
+          const offset = window.innerHeight * 0.15;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }}
+      id={id}
+      data-testid="cta-button"
+    >
       <div className="cta-button group">
         <div className="bg-circle" />
         <p className="text"> {text}</p>
