@@ -41,12 +41,12 @@ export const navLinks: NavLink[] = [
   { name: 'Testimonials', link: '#testimonials' },
 ];
 
-export const logoIconsList: { imgPath: string }[] = [
-  { imgPath: '/images/logos/comethio.png' },
-  { imgPath: '/images/logos/consensys.png' },
-  { imgPath: '/images/logos/ff.png' },
-  { imgPath: '/images/logos/ubiplace.png' },
-  { imgPath: '/images/logos/acn.png' },
+export const companiesIconsList: { imgPath: string }[] = [
+  { imgPath: '/images/companies/comethio.png' },
+  { imgPath: '/images/companies/consensys.png' },
+  { imgPath: '/images/companies/ff.png' },
+  { imgPath: '/images/companies/ubiplace.png' },
+  { imgPath: '/images/companies/acn.png' },
 ];
 
 export type Abilities = {
@@ -77,8 +77,8 @@ export const experienceCards: ExperienceCard[] = [
   {
     review:
       'Igor brought sharp UI skills and a user-focused mindset to our Web3 gaming project. His work helped bridge Web2/Web3 expectations with a smooth experience.',
-    imgPath: '/images/logos.comethio.png',
-    logoPath: '/images/logos.comethio.png',
+    imgPath: '/images/companies/comethio.png',
+    logoPath: '/images/logos/comethio-logo.png',
     title: 'Senior Frontend Engineer',
     date: 'Jan 2024 – Dec 2024',
     responsibilities: [
@@ -90,21 +90,21 @@ export const experienceCards: ExperienceCard[] = [
   {
     review:
       "Igor's work across MetaMask, Linea, and multiple enterprise DApps has been outstanding. He combines technical depth with strategic thinking.",
-    imgPath: '/images/logos/consensys.png',
-    logoPath: '/images/logos/consensys.png',
+    imgPath: '/images/companies/consensys.png',
+    logoPath: '/images/logos/consensys-logo.png',
     title: 'Fullstack Engineer',
     date: 'Aug 2021 – Jan 2024',
     responsibilities: [
-      'Took some github issues on Metamask extension, integrated Ledger hardware wallets into MetaMask Mobile and led a Mastercard virtual card PoC.',
-      'Worked on Linea (zkEVM rollup) and implemented Lens Protocol for a social DApp.',
+      'Fixed some github issues on Metamask extension, integrated Ledger hardware wallets into MetaMask Mobile and led a Mastercard virtual card PoC.',
       'Contributed to Covantis (hexagonal backend, graphical features) and CMA-CGM (port logistics app).',
+      'Worked on Linea (zkEVM rollup) and implemented Lens Protocol for a social DApp.',
     ],
   },
   {
     review:
       'Igor was instrumental in launching our NFT marketplace. He shipped fast, high-quality features and integrated with the NEAR SDK.',
-    imgPath: '/images/logos/ff.png',
-    logoPath: '/images/logos/ff.png',
+    imgPath: '/images/companies/ff.png',
+    logoPath: '/images/logos/ff-logo.png',
     title: 'Frontend Engineer (Freelance)',
     date: 'Mar 2022 – Jan 2023',
     responsibilities: [
@@ -116,8 +116,8 @@ export const experienceCards: ExperienceCard[] = [
   {
     review:
       'Igor helped improve our SmartVigie platform with strong frontend contributions and great autonomy.',
-    imgPath: '/images/logos/ubiplace.png',
-    logoPath: '/images/logos/ubiplace.png',
+    imgPath: '/images/companies/ubiplace.png',
+    logoPath: '/images/logos/ubiplace-logo.png',
     title: 'Frontend Engineer (Freelance)',
     date: '2020 & 2021',
     responsibilities: [
@@ -129,8 +129,8 @@ export const experienceCards: ExperienceCard[] = [
   {
     review:
       'Igor was a pillar in our blockchain innovation team. He combined delivery, clarity, and vision across sectors from finance to energy.',
-    imgPath: '/images/logos/acn.png',
-    logoPath: '/images/logos/acn.png',
+    imgPath: '/images/companies/acn.png',
+    logoPath: '/images/companies/acn-logo.png',
     title: 'Analyst / Blockchain SME',
     date: 'Jan 2016 – Aug 2021',
     responsibilities: [

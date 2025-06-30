@@ -1,4 +1,4 @@
-import { logoIconsList } from '@/constants.ts';
+import { companiesIconsList } from '@/constants.ts';
 
 type LogoIconProps = {
   icon: {
@@ -22,10 +22,10 @@ const LogoSection = () => {
 
       <div className="marquee h-52">
         <div className="marquee-box md:gap-12 gap-5">
-          {logoIconsList.map((icon, index) => (
+          {companiesIconsList.map((icon, index) => (
             <LogoIcon key={`1-${index}`} icon={icon} />
           ))}
-          {logoIconsList.map((icon, index) => (
+          {companiesIconsList.map((icon, index) => (
             <LogoIcon key={`2-${index}`} icon={icon} />
           ))}
         </div>

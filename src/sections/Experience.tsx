@@ -14,10 +14,33 @@ const Experience = () => {
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <ExpGlowCard card={card} index={index}>
-                    <div>
-                      <img src={card.imgPath} alt={card.title} />
+                    <div className="mt-10">
+                      <img src={card.imgPath} alt={card.title} className="w-80" />
                     </div>
                   </ExpGlowCard>
+                </div>
+                <div className="xl:w-4/6">
+                  <div className="flex items-start">
+                    <div className="timeline-wrapper">
+                      <div className="timeline" />
+                      <div className="gradient-line w-1 h-full" />
+                    </div>
+                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                      <div className="timeline-logo">
+                        <img src={card.logoPath} alt={card.title} />
+                      </div>
+                      <div>
+                        <h1 className="font-semibold text-3xl"> {card.title}</h1>
+                        <p className="my-5 text-white-50"> 📅 {card.date}</p>
+                        <p className="text-[#839cb5] italic"> Responsabilities</p>
+                        <ul className="list-disc ms-5 text-white-50">
+                          {card.responsibilities.map((responsibility, index) => (
+                            <li key={index}>{responsibility}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
