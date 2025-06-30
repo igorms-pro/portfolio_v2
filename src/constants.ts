@@ -46,3 +46,27 @@ export const logoIconsList: { imgPath: string }[] = [
   { imgPath: '/images/logos/ubiplace.png' },
   { imgPath: '/images/logos/acn.png' },
 ];
+
+export type Skill = {
+  imgPath: string;
+  title: string;
+  desc: string;
+};
+
+export const skills: Skill[] = [
+  {
+    imgPath: '/images/seo.png',
+    title: 'Frontend Architecture',
+    desc: 'Building robust, scalable, and performant interfaces with React, TypeScript, and modern frameworks.',
+  },
+  {
+    imgPath: '/images/chat.png',
+    title: 'Web3 & Blockchain Expertise',
+    desc: 'Proven experience across Ethereum, Polygon, and NEAR — from MetaMask to NFT marketplaces and zk-rollups.',
+  },
+  {
+    imgPath: '/images/time.png',
+    title: 'Product & UX Focus',
+    desc: 'Delivering smooth onboarding and intuitive UI, especially at the Web2/Web3 intersection.',
+  },
+];
