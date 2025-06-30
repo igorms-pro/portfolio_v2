@@ -1,9 +1,9 @@
-import { skills } from '@/constants.ts';
+import { abilities } from '@/constants.ts';
 
 const FeatureCards = () => (
   <div className="w-full padding-x-lg">
     <div className="mx-auto grid-3-cols">
-      {skills.map(({ imgPath, title, desc }) => (
+      {abilities.map(({ imgPath, title, desc }) => (
         <div
           key={title}
           className="card-border rounded-xl p-8 flex flex-col gap-4 transition-transform duration-300 ease-out hover:scale-[1.02] hover:-translate-y-1"
