@@ -396,28 +396,23 @@ section {
 
 /* marquee */
 .marquee {
-    width: 100dvw;
     overflow: hidden;
+    width: 100vw;
     position: relative;
 }
+
 .marquee-box {
     display: flex;
-    align-items: center;
-    width: 200%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    animation: marquee 60s linear infinite;
+    min-width: max-content;
+    animation: marquee-scroll 40s linear infinite;
 }
-.marquee-item {
-    float: left;
-}
-@keyframes marquee {
-    0% {
-        left: 0;
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0%);
     }
-    100% {
-        left: -100%;
+    to {
+        transform: translateX(-50%);
     }
 }
 /* marquee end */

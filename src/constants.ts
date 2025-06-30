@@ -38,3 +38,11 @@ export const navLinks: NavLink[] = [
   { name: 'Skills', link: '#skills' },
   { name: 'Testimonials', link: '#testimonials' },
 ];
+
+export const logoIconsList: { imgPath: string }[] = [
+  { imgPath: '/images/logos/comethio.png' },
+  { imgPath: '/images/logos/consensys.png' },
+  { imgPath: '/images/logos/ff.png' },
+  { imgPath: '/images/logos/ubiplace.png' },
+  { imgPath: '/images/logos/acn.png' },
+];
