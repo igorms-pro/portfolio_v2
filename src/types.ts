@@ -49,3 +49,11 @@ export type TechStackIcon = {
   scale: number;
   rotation: [number, number, number];
 };
+
+export type Testimonial = {
+  name: string;
+  mentions: string;
+  review: string;
+  imgPath: string;
+  linkedin: string;
+};

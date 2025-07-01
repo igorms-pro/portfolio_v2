@@ -1,6 +1,6 @@
 import TitleHeader from '@/components/TitleHeader';
 import { experienceCards } from '@/constants';
-import ExpGlowCard from '@/components/ExpGlowCard';
+import GlowCard from '@/components/GlowCard.tsx';
 import type { ExperienceCard } from '@/types';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -11,8 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
   useGSAP(() => {
-    console.log('TEST ENV:', import.meta.env.VITEST); // true when running vitest
-
     if (import.meta.env.VITEST) return;
     // Loop through each timeline card and animate them in
     // as the user scrolls to each card
@@ -102,11 +100,11 @@ const Experience = () => {
             {experienceCards.map((card: ExperienceCard, index: number) => (
               <div key={`${card.title}-${index}`} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <ExpGlowCard card={card} index={index}>
+                  <GlowCard card={card} index={index}>
                     <div className="mt-10">
                       <img src={card.imgPath} alt={card.title} className="w-80" />
                     </div>
-                  </ExpGlowCard>
+                  </GlowCard>
                 </div>
                 <div className="xl:w-4/6">
                   <ExpTextPanel card={card} />

@@ -5,6 +5,7 @@ import type {
   NavLink,
   TechStackIcon,
   TechStackImg,
+  Testimonial,
   WordItem,
 } from '@/types.ts';
 
@@ -216,5 +217,48 @@ export const techStackIcons: TechStackIcon[] = [
     modelPath: '/models/python-transformed.glb',
     scale: 0.8,
     rotation: [0, 0, 0],
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: 'Vincent',
+    mentions: '@vincent',
+    review:
+      'I can’t say enough good things about Igor. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+    imgPath: '/images/testimonials/vincent.jpeg',
+    linkedin: 'https://fr.linkedin.com/in/vincent-le-gallic',
+  },
+  {
+    name: 'Benoit',
+    mentions: '@benoit',
+    review:
+      'Working with Igor was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+    imgPath: '/images/testimonials/benoit.webp',
+    linkedin: 'https://fr.linkedin.com/in/mulocherb',
+  },
+  {
+    name: 'Chris',
+    mentions: '@chris',
+    review:
+      "Collaborating with Igor was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Igor's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Igor is the ideal partner.",
+    imgPath: '/images/testimonials/chris.jpeg',
+    linkedin: 'https://www.linkedin.com/in/hayesdata',
+  },
+  {
+    name: 'Jean-Denis',
+    mentions: '@jeandenis',
+    review:
+      'Igor was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.',
+    imgPath: '/images/testimonials/jean.jpeg',
+    linkedin: 'https://fr.linkedin.com/in/paris-jean-denis-46b65a77',
+  },
+  {
+    name: 'Thomas',
+    mentions: '@thomas',
+    review:
+      'Igor’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!',
+    imgPath: '/images/testimonials/thomas.jpeg',
+    linkedin: 'https://fr.linkedin.com/in/thomasmalnoury',
   },
 ];

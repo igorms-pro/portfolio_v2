@@ -1,13 +1,11 @@
 import { useRef, type MouseEvent, type ReactNode } from 'react';
-import type { Card } from '@/types.ts';
-
-type GlowCardProps = {
-  card: Card;
+type GlowCardProps<T extends { review: string }> = {
+  card: T;
   index: number;
   children: ReactNode;
 };
 
-const GlowCard = ({ card, index, children }: GlowCardProps) => {
+const GlowCard = <T extends { review: string }>({ card, index, children }: GlowCardProps<T>) => {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const handleMouseMove = (i: number) => (e: MouseEvent<HTMLDivElement>) => {
