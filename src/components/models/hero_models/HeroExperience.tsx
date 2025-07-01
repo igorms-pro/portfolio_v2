@@ -1,9 +1,9 @@
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { useMediaQuery } from 'react-responsive';
-import { Room } from '@/components/hero_models/Room.tsx';
-import HeroLights from '@/components/hero_models/HeroLights.tsx';
-import Particles from '@/components/hero_models/Particles.tsx';
+import { Room } from '@/components/models/hero_models/Room.tsx';
+import HeroLights from '@/components/models/hero_models/HeroLights.tsx';
+import Particles from '@/components/models/hero_models/Particles.tsx';
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });

@@ -1,5 +1,5 @@
 import { Header } from './Header.tsx';
-import HeroExperience from '@/components/hero_models/HeroExperience.tsx';
+import HeroExperience from '@/components/models/hero_models/HeroExperience.tsx';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '@/components/AnimatedCounter.tsx';
