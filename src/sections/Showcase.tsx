@@ -12,6 +12,9 @@ const Showcase = () => {
   const sectionRideWaveRef = useRef<HTMLDivElement | null>(null);
 
   useGSAP(() => {
+    console.log('TEST ENV:', import.meta.env.VITEST); // true when running vitest
+
+    if (import.meta.env.VITEST) return;
     const projectsCards = [
       sectionQfourUsRef.current,
       sectionHealthLinkRef.current,

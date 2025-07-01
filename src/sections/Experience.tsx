@@ -11,6 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
   useGSAP(() => {
+    console.log('TEST ENV:', import.meta.env.VITEST); // true when running vitest
+
+    if (import.meta.env.VITEST) return;
     // Loop through each timeline card and animate them in
     // as the user scrolls to each card
     gsap.utils.toArray<HTMLElement>('.timeline-card').forEach((card) => {
