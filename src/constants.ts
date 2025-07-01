@@ -1,9 +1,12 @@
-import type { ExperienceCard } from '@/types.ts';
-
-export type WordItem = {
-  text: string;
-  imgPath: string;
-};
+import type {
+  Abilities,
+  CounterItem,
+  ExperienceCard,
+  NavLink,
+  TechStackIcon,
+  TechStackImg,
+  WordItem,
+} from '@/types.ts';
 
 export const words: WordItem[] = [
   { text: 'Ideas', imgPath: '/images/ideas.svg' },
@@ -16,23 +19,12 @@ export const words: WordItem[] = [
   { text: 'Code', imgPath: '/images/code.svg' },
 ];
 
-export type CounterItem = {
-  value: number;
-  suffix: string;
-  label: string;
-};
-
 export const counterItems: CounterItem[] = [
   { value: 9, suffix: '+', label: 'Years of Experience' },
   { value: 20, suffix: '+', label: 'Satisfied Clients' },
   { value: 108, suffix: '+', label: 'Completed Projects' },
   { value: 85, suffix: '%', label: 'Client Retention Rate' },
 ];
-
-export type NavLink = {
-  name: string;
-  link: string;
-};
 
 export const navLinks: NavLink[] = [
   { name: 'Work', link: '#work' },
@@ -48,12 +40,6 @@ export const companiesIconsList: { imgPath: string }[] = [
   { imgPath: '/images/companies/ubiplace.png' },
   { imgPath: '/images/companies/acn.png' },
 ];
-
-export type Abilities = {
-  imgPath: string;
-  title: string;
-  desc: string;
-};
 
 export const abilities: Abilities[] = [
   {
@@ -138,5 +124,97 @@ export const experienceCards: ExperienceCard[] = [
       'Developed PoCs for CBDC, energy sharing, health data, and connected insurance.',
       'Worked on VR/AR, chatbots, and IoT apps in cross-functional teams.',
     ],
+  },
+];
+
+export const techStackImgs: TechStackImg[] = [
+  {
+    name: 'Typescript',
+    imgPath: '/images/stack/typescript.svg',
+  },
+  {
+    name: 'Javascript',
+    imgPath: '/images/stack/javascript.svg',
+  },
+  {
+    name: 'Blockchain',
+    imgPath: '/images/stack/blockchain-logo.svg',
+  },
+  {
+    name: 'Web3',
+    imgPath: '/images/stack/web3-logo.svg',
+  },
+  {
+    name: 'Ethereum',
+    imgPath: '/images/stack/ethereum-eth-logo.svg',
+  },
+  {
+    name: 'Solana',
+    imgPath: '/images/stack/solana-sol-logo.svg',
+  },
+  {
+    name: 'Near',
+    imgPath: '/images/stack/near-logo.svg',
+  },
+  {
+    name: 'Wagmi',
+    imgPath: '/images/stack/wagmi-logo.svg',
+  },
+  {
+    name: 'Viem',
+    imgPath: '/images/stack/viem-logo.svg',
+  },
+  {
+    name: 'Shadcn',
+    imgPath: '/images/stack/shadcn.svg',
+  },
+  {
+    name: 'Tailwind',
+    imgPath: '/images/stack/tailwind.svg',
+  },
+  {
+    name: 'Atro',
+    imgPath: '/images/stack/astro.svg',
+  },
+  {
+    name: 'Git',
+    imgPath: '/images/stack/git.svg',
+  },
+  {
+    name: 'Nestjs',
+    imgPath: '/images/stack/nestjs.svg',
+  },
+  {
+    name: 'Nextjs',
+    imgPath: '/images/stack/next.svg',
+  },
+  {
+    name: 'Vuejs',
+    imgPath: '/images/stack/vuejs.svg',
+  },
+  {
+    name: 'Nuxt',
+    imgPath: '/images/stack/nuxt.svg',
+  },
+];
+
+export const techStackIcons: TechStackIcon[] = [
+  {
+    name: 'React',
+    modelPath: '/models/react_logo-transformed.glb',
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: 'Node',
+    modelPath: '/models/node-transformed.glb',
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+  {
+    name: 'Python ',
+    modelPath: '/models/python-transformed.glb',
+    scale: 0.8,
+    rotation: [0, 0, 0],
   },
 ];
