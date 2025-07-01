@@ -5,6 +5,8 @@
       "@/*": ["./*"]
     },
     "verbatimModuleSyntax": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
   "files": [],

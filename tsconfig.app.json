@@ -5,17 +5,15 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "skipLibCheck": true,
 
-    /* Linting */
+    //  Good practices
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -23,13 +21,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "types": ["vitest/globals", "@testing-library/jest-dom"],
-
-    /* Project structure */
+    //  Project structure
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
   "include": ["src"]
 }

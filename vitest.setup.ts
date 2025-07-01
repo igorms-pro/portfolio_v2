@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+import { vi } from 'vitest';
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
@@ -14,5 +15,7 @@ Object.defineProperty(window, 'matchMedia', {
   }),
 });
 
-global.requestAnimationFrame = (cb) => setTimeout(cb, 0);
-global.cancelAnimationFrame = (id) => clearTimeout(id);
+global.requestAnimationFrame = (cb: FrameRequestCallback) => setTimeout(cb, 0);
+global.cancelAnimationFrame = (id: number) => clearTimeout(id);
+window.requestAnimationFrame = (cb: FrameRequestCallback) => setTimeout(cb, 0);
+window.cancelAnimationFrame = (id: number) => clearTimeout(id);
