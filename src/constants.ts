@@ -130,7 +130,7 @@ export const experienceCards: ExperienceCard[] = [
     review:
       'Igor was a pillar in our blockchain innovation team. He combined delivery, clarity, and vision across sectors from finance to energy.',
     imgPath: '/images/companies/acn.png',
-    logoPath: '/images/companies/acn-logo.png',
+    logoPath: '/images/logos/acn-logo.png',
     title: 'Analyst / Blockchain SME',
     date: 'Jan 2016 – Aug 2021',
     responsibilities: [
