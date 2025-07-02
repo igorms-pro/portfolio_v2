@@ -1,110 +1,113 @@
-<div align="center">
-  <br />
-    <a href="https://www.youtube.com/watch?v=E-fdPfRxkzQ" target="_blank">
-      <img src="public/images/readme.png" alt="Project Banner">
-    </a>
-  <br />
+# 🧑‍💻 Igor Moreno Semedo — Portfolio
 
-  <div>
-    <img src="https://img.shields.io/badge/-Three.js-black?style=for-the-badge&logo=three.js&logoColor=white" />
-    <img src="https://img.shields.io/badge/-GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  </div>
+Welcome to the source code of [**igormorenosemedo.com**](https://igormorenosemedo.com/) — a modern, performant developer portfolio built with React, Vite, Tailwind CSS, and interactive 3D/animated components. It features smooth UI, motion effects, and a working contact form powered by **EmailJS**.
 
-<h3 align="center">Igor Moreno Semedo Portfolio Website</h3>
+---
 
+## 🚀 Tech Stack
 
-</div>
-
-## 📋 <a name="table">Table of Contents</a>
-
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-
-
-## <a name="introduction">🤖 Introduction</a>
-
-This is my Portfolio project! From astro to 3D. Hope you will like it. i like :D
+* ⚛️ **React + Vite**
+* 🎨 **Tailwind CSS** (with custom utility layers)
+* 📧 **EmailJS** for contact form
+* ✨ **GSAP**, `@react-three/fiber`, and **Three.js** for 3D and motion
+* 🧪 **Vitest + Testing Library**
+* 🔔 **Sonner** for clean toast notifications
 
 Builded from <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+---
 
-- Three.js
-- React Three Fiber
-- Drei
-- GSAP
-- Tailwind CSS
-- Vite
-- React 19
+## 📅 Live Site
 
-## <a name="features">🔋 Features</a>
+➡️ [https://igormorenosemedo.com](https://igormorenosemedo.com)
 
-### Features of the 3D Portfolio Project
+---
 
-👉 Animated 3D models and reveal animations
+## 💻 Getting Started
 
-👉 Realistic lighting and shadows
-
-👉 GSAP-powered scroll interactions
-
-👉 Responsive design with Tailwind CSS and Flexbox/Grid
-
-👉 Micro Interactions
-
-👉 Multi-section layout (About, Projects, Contact)
-
-👉 Mobile optimized 3D experience
-
-and many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
-```bash
-git clone git@github.com:igorms-pro/portfolio_v2.git
-cd portfolio_v2
-```
-
-**Installation**
-
-Install the project dependencies using npm:
+1. **Install dependencies**:
 
 ```bash
 npm install
 ```
 
-**Set Up Environment Variables**
+2. **Create a `.env` file** from the example:
 
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-VITE_APP_EMAILJS_SERVICE_ID=
-VITE_APP_EMAILJS_TEMPLATE_ID=
-VITE_APP_EMAILJS_PUBLIC_KEY=
+```bash
+cp .env.example .env
 ```
 
-Replace the placeholder values with your actual **[EmailJS](https://www.emailjs.com/)** credentials.
+3. **Set your EmailJS credentials** in `.env`:
 
-**Running the Project**
+```env
+VITE_APP_EMAILS_SERVICE_ID=your_service_id
+VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+4. **Start the dev server**:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173/) in your browser to view the project.
+---
 
+## ✉️ EmailJS Integration
 
+The contact form uses `emailjs.sendForm` and `useRef` to submit messages without a backend.
+
+* [Create an account at emailjs.com](https://www.emailjs.com/)
+* Set up a service, template, and get your public key
+* Paste values into your `.env` file
+
+No backend or server required!
+
+---
+
+## 🪙 Developer Tips
+
+* All sections are modular and easy to reuse.
+* Testimonials and social links are managed from a single `constants.ts` file.
+* Utility classes like `flex-center` or `section-padding` are defined in Tailwind's `@layer`.
+* Toasts use [`sonner`](https://sonner.emilkowal.ski) instead of `react-toastify` for a smoother dev experience.
+* Tests are written with `Vitest` and `Testing Library`. Use `npm run test` to run them.
+
+---
+
+## 📚 File Structure
+
+```
+src/
+├── components/        # UI Components
+├── constants.ts       # Static data (testimonials, socials)
+├── hooks/             # Custom hooks
+├── styles/            # Global and Tailwind styles
+├── assets/            # Images and 3D models
+├── pages/             # Major page sections
+└── App.tsx            # Main entry
+```
+
+---
+
+## 🔐 .env.example
+
+```env
+VITE_APP_EMAILS_SERVICE_ID=
+VITE_APP_EMAILJS_TEMPLATE_ID=
+VITE_APP_EMAILJS_PUBLIC_KEY=
+```
+
+---
+
+## 🛍️ License
+
+MIT License. Feel free to fork and customize, but credit is appreciated.
+
+---
+
+## 💬 Contact
+
+Made with ❤️ by [Igor Moreno Semedo](https://www.linkedin.com/in/igor-ms)
+
+[View Live](https://igormorenosemedo.com) | [GitHub](https://github.com/igorms-pro)
