@@ -7,10 +7,9 @@ const Testimonials = () => {
     <section id="testimonials" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader title="What people say about me" subTitle="⭐️Feedback" />
-
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
           {testimonials.map((testimonial, index) => (
-            <GlowCard card={testimonial} index={index}>
+            <GlowCard key={`${testimonial.name}-${index}`} card={testimonial} index={index}>
               <a
                 href={testimonial.linkedin}
                 target="_blank"

@@ -57,3 +57,9 @@ export type Testimonial = {
   imgPath: string;
   linkedin: string;
 };
+
+export type SocialImage = {
+  name: string;
+  imgPath: string;
+  link: string;
+};

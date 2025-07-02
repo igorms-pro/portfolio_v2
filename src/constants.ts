@@ -3,6 +3,7 @@ import type {
   CounterItem,
   ExperienceCard,
   NavLink,
+  SocialImage,
   TechStackIcon,
   TechStackImg,
   Testimonial,
@@ -260,5 +261,18 @@ export const testimonials: Testimonial[] = [
       'Igor’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!',
     imgPath: '/images/testimonials/thomas.jpeg',
     linkedin: 'https://fr.linkedin.com/in/thomasmalnoury',
+  },
+];
+
+export const socialImgs: SocialImage[] = [
+  {
+    name: 'github',
+    imgPath: '/images/socials/github_light.svg',
+    link: 'https://github.com/igorms-pro',
+  },
+  {
+    name: 'linkedin',
+    imgPath: '/images/socials/linkedin_light.svg',
+    link: 'https://www.linkedin.com/in/igor-ms',
   },
 ];

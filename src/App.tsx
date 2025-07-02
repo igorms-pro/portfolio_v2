@@ -8,6 +8,7 @@ import TechStack from '@/sections/TechStack.tsx';
 import Testimonials from '@/sections/Testimonials.tsx';
 import Contact from '@/sections/Contact.tsx';
 import { Toaster } from 'sonner';
+import Footer from '@/sections/Footer.tsx';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <TechStack />
       <Testimonials />
       <Contact />
+      <Footer />
       <Toaster richColors position="top-center" />
     </>
   );
