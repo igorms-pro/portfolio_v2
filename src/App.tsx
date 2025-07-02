@@ -7,6 +7,7 @@ import Experience from '@/sections/Experience.tsx';
 import TechStack from '@/sections/TechStack.tsx';
 import Testimonials from '@/sections/Testimonials.tsx';
 import Contact from '@/sections/Contact.tsx';
+import { Toaster } from 'sonner';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <TechStack />
       <Testimonials />
       <Contact />
+      <Toaster richColors position="top-center" />
     </>
   );
 };

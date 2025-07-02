@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
 
 import TitleHeader from '../components/TitleHeader';
 import ContactExperience from '../components/models/contact/ContactExperience';
@@ -20,7 +21,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
 
     try {
       await emailjs.sendForm(
@@ -31,8 +32,10 @@ const Contact = () => {
       );
 
       setForm({ name: '', email: '', message: '' });
+      toast.success('Message sent successfully 🚀');
     } catch (error) {
-      console.error('EmailJS Error:', error); // Optional: show toast
+      console.error('EmailJS Error:', error);
+      toast.error('Something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -85,7 +88,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">{loading ? 'Sending...' : 'Send Message'}</p>
